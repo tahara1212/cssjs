@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": ";AAEA,AAAA,IAAI,CAAC;EACH,uBAAuB;CAExB",
+    "sources": [
+        "../03_HTMLとCSSを極める（アニメーション編）/060_演習_色んなローダーを作ってみよう/try.scss",
+        "../03_HTMLとCSSを極める（アニメーション編）/060_演習_色んなローダーを作ってみよう/_mixin.scss"
+    ],
+    "names": [],
+    "file": "try.css"
+}

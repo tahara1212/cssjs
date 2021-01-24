@@ -1,0 +1,16 @@
+.parent {
+  color: red;
+}
+
+.parent > .child {
+  color: black;
+}
+
+.parent > .child > .grandson {
+  color: orange;
+}
+
+.child {
+  color: aqua;
+}
+/*# sourceMappingURL=style.css.map */

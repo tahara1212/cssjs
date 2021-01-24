@@ -2,5 +2,40 @@
   width: 100px;
   height: 100px;
   margin: 0 auto;
+  margin-bottom: 20px;
   background-color: orangered;
+  transition: all 1s;
+  transform-origin: center center;
+
+  // X軸とY軸
+  &.translate:hover {
+    background-color: cadetblue;
+    // 引数にX軸とY軸を指定
+    transform: translate(20px, 20px);
+    // transform: translateX(20px);
+  }
+
+  // 回転
+  &.rotate:hover {
+    background-color: blue;
+    transform: rotate(360deg);
+  }
+
+  // 平行四辺形
+  &.skew:hover {
+    background-color: chartreuse;
+    transform: skew(20deg, 20deg);
+  }
+
+  // 拡大縮小
+  &.scale:hover {
+    background-color: darkcyan;
+    transform: scale(1.1, 1.1);
+  }
+  
+  // 複数指定
+  &.all:hover {
+    background-color: black;
+    transform: translate(50px, 50px) rotate(50deg) scale(2, 2);
+  }
 }

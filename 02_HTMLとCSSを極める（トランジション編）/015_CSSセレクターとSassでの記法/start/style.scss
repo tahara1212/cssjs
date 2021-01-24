@@ -1,0 +1,17 @@
+.parent {
+    color: red;
+
+    & > .child {
+        color: black;
+
+        & > .grandson {
+            color: orange;
+        }
+    }
+}
+
+
+.child {
+    color: aqua;
+    // background-color: blue;
+}

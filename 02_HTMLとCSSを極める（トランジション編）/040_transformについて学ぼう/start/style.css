@@ -2,6 +2,41 @@
   width: 100px;
   height: 100px;
   margin: 0 auto;
+  margin-bottom: 20px;
   background-color: orangered;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.rect.translate:hover {
+  background-color: cadetblue;
+  -webkit-transform: translate(20px, 20px);
+          transform: translate(20px, 20px);
+}
+
+.rect.rotate:hover {
+  background-color: blue;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rect.skew:hover {
+  background-color: chartreuse;
+  -webkit-transform: skew(20deg, 20deg);
+          transform: skew(20deg, 20deg);
+}
+
+.rect.scale:hover {
+  background-color: darkcyan;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.rect.all:hover {
+  background-color: black;
+  -webkit-transform: translate(50px, 50px) rotate(50deg) scale(2, 2);
+          transform: translate(50px, 50px) rotate(50deg) scale(2, 2);
 }
 /*# sourceMappingURL=style.css.map */

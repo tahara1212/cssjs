@@ -29,8 +29,8 @@
  */
 /* インライン要素に対して */
 // .parent {
-//   text-align: right;
-//   letter-spacing: -6px;
+//   text-align: center;
+//   letter-spacing: 10px;
 // }
 // .child {
 //     display: inline-block;
@@ -56,8 +56,9 @@
 //   transform: translate(-50%, -50%);
 // }
 
-// .parent {
-//   display: flex;
-//   flex-direction: row-reverse;
-//   justify-content: center;
-// }
+.parent {
+  display: flex;
+  // flex-direction: row-reverse;
+  // align-items: flex-end;
+  justify-content: flex-end;
+}

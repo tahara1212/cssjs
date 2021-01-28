@@ -8,21 +8,22 @@
   height: 18px;
   background-color: black;
   border-radius: 50%;
-  -webkit-animation: sk-bouncedelay 1.4s infinite;
-          animation: sk-bouncedelay 1.4s infinite;
+  opacity: 0.5;
+  -webkit-animation: sk-bounceDelay 1s infinite;
+          animation: sk-bounceDelay 1s infinite;
 }
 
-.three-dot-spinner div:nth-child(1) {
+.three-dot-spinner .bounce1 {
   -webkit-animation-delay: -0.32s;
           animation-delay: -0.32s;
 }
 
-.three-dot-spinner div:nth-child(2) {
+.three-dot-spinner .bounce2 {
   -webkit-animation-delay: -0.16s;
           animation-delay: -0.16s;
 }
 
-@-webkit-keyframes sk-bouncedelay {
+@-webkit-keyframes sk-bounceDelay {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -41,7 +42,7 @@
   }
 }
 
-@keyframes sk-bouncedelay {
+@keyframes sk-bounceDelay {
   0% {
     -webkit-transform: scale(0);
             transform: scale(0);

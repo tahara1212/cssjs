@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+a {
+  color: red;
+}
+
+a:visited {
+  color: chartreuse;
+}
+
+a:hover {
+  color: green;
+}
+
+a:focus {
+  color: black;
+}
+
+div span {
+  color: red;
+}
+
+div span:not(.cls) {
+  color: palegreen;
+}
+/*# sourceMappingURL=style.css.map */

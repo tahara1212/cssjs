@@ -1,21 +1,21 @@
 .appear.up .item {
-  -webkit-transform: translateY(6px);
-          transform: translateY(6px);
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
 }
 
 .appear.down .item {
-  -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
 }
 
 .appear.left .item {
-  -webkit-transform: translateX(40px);
-          transform: translateX(40px);
+  -webkit-transform: translateX(140px);
+          transform: translateX(140px);
 }
 
 .appear.right .item {
-  -webkit-transform: translateX(-40px);
-          transform: translateX(-40px);
+  -webkit-transform: translateX(-140px);
+          transform: translateX(-140px);
 }
 
 .appear .item {

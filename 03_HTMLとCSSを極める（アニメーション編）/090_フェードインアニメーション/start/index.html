@@ -8,10 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="document.querySelector('.appear').classList.toggle('inview');">
-        appear
+    <button onclick="document.querySelector('.appear').classList.toggle('inview');
+    document.querySelector('.appear').classList.toggle('up'); ">
+        top
     </button>
-    <div class="appear right">
+    <button onclick="document.querySelector('.appear').classList.toggle('inview');
+    document.querySelector('.appear').classList.toggle('down'); ">
+        down
+    </button>
+    <button onclick="document.querySelector('.appear').classList.toggle('inview');
+    document.querySelector('.appear').classList.toggle('left'); ">
+        left
+    </button>
+    <button onclick="document.querySelector('.appear').classList.toggle('inview');
+    document.querySelector('.appear').classList.toggle('right'); ">
+        right
+    </button>
+    <div class="appear">
         <div class="item"><img src="./images/image-1.jpg"></div>
         <div class="item"><img src="./images/image-1.jpg"></div>
         <div class="item"><img src="./images/image-1.jpg"></div>

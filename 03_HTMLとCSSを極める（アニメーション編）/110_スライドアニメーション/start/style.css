@@ -17,9 +17,11 @@ img {
   right: 0;
   bottom: 0;
   background-color: #eaebe6;
+  opacity: 0;
 }
 
 .cover-slide.inview::after {
+  opacity: 1;
   -webkit-animation-name: slideImage;
           animation-name: slideImage;
   -webkit-animation-duration: 1.6s;
@@ -38,39 +40,64 @@ img {
 
 @-webkit-keyframes slideImage {
   0% {
-    left: 0;
-    right: 100%;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
   50% {
-    left: 0;
-    right: 0;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50.1% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
   100% {
-    left: 100%;
-    right: 0;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
 }
 
 @keyframes slideImage {
   0% {
-    left: 0;
-    right: 100%;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
   50% {
-    left: 0;
-    right: 0;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50.1% {
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
   100% {
-    left: 100%;
-    right: 0;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
   }
 }
 
-.img-zoom {
+.img-zoom, .bg-img-zoom {
   opacity: 0;
+  cursor: pointer;
 }
 
-.inview .img-zoom {
+.inview .img-zoom, .inview .bg-img-zoom {
   opacity: 1;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -92,7 +119,7 @@ img {
           animation-fill-mode: none;
 }
 
-.img-zoom:hover {
+.img-zoom:hover, .bg-img-zoom:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
@@ -160,5 +187,19 @@ img {
 
 .hover-darken:hover::before {
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-img-zoom {
+  background-image: url(./images/image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.bg-img-zoom::before {
+  display: block;
+  content: '';
+  padding-top: 50%;
 }
 /*# sourceMappingURL=style.css.map */
